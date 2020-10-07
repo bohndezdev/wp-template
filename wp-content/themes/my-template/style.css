@@ -1,0 +1,14 @@
+/*
+Theme Name: Example Webpack theme
+Theme URI: 
+Author: Boris Hernández
+Author URI: https://medium.com/@bohndez.dev
+Description: Theme para sitio web vamospormas
+Version: 0.0.1
+License: MIT
+License URI: 
+Tags: 
+Text Domain: Example Webpack theme
+*/
+
+@import url('assets/css/styles.bundle.css');

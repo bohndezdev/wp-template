@@ -1,0 +1,46 @@
+{
+  "name": "wp-template",
+  "version": "1.0.0",
+  "description": "Project to add webpack for JS and SCSS to a Wordpress template",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "webpack -w --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bohndezdev/wp-template.git"
+  },
+  "keywords": [
+    "wordpress",
+    "js",
+    "scss",
+    "webpack"
+  ],
+  "author": "Boris Hernández <bohndez.dev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bohndezdev/wp-template/issues"
+  },
+  "homepage": "https://github.com/bohndezdev/wp-template#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.0",
+    "extract-loader": "^5.1.0",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-minify": "^0.3.2",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "php-loader": "^0.2.0",
+    "sass-loader": "^9.0.2",
+    "style-loader": "^1.2.1",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}

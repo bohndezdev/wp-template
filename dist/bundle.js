@@ -81,55 +81,20 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/test.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/js/despedidad.ts":
-/*!******************************!*\
-  !*** ./src/js/despedidad.ts ***!
-  \******************************/
+/***/ "./src/js/test.ts":
+/*!************************!*\
+  !*** ./src/js/test.ts ***!
+  \************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.Chao = void 0;\nvar Chao = /** @class */ (function () {\n    function Chao() {\n    }\n    Chao.prototype.chao = function (despedida) {\n        console.log('despedida', despedida);\n    };\n    return Chao;\n}());\nexports.Chao = Chao;\n\n\n//# sourceURL=webpack:///./src/js/despedidad.ts?");
-
-/***/ }),
-
-/***/ "./src/js/index.ts":
-/*!*************************!*\
-  !*** ./src/js/index.ts ***!
-  \*************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.Test = void 0;\nvar despedidad_1 = __webpack_require__(/*! ./despedidad */ \"./src/js/despedidad.ts\");\nvar Test = /** @class */ (function () {\n    function Test() {\n    }\n    Test.prototype.addType = function (hola) {\n        console.log('Saludo', hola);\n        var ch = new despedidad_1.Chao();\n        ch.chao('Naaa');\n    };\n    return Test;\n}());\nexports.Test = Test;\n\n\n//# sourceURL=webpack:///./src/js/index.ts?");
-
-/***/ }),
-
-/***/ "./src/scss/styles.scss":
-/*!******************************!*\
-  !*** ./src/scss/styles.scss ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"css/styles.bundle.css\");\n\n//# sourceURL=webpack:///./src/scss/styles.scss?");
-
-/***/ }),
-
-/***/ 0:
-/*!******************************************************!*\
-  !*** multi ./src/js/index.ts ./src/scss/styles.scss ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("__webpack_require__(/*! ./src/js/index.ts */\"./src/js/index.ts\");\nmodule.exports = __webpack_require__(/*! ./src/scss/styles.scss */\"./src/scss/styles.scss\");\n\n\n//# sourceURL=webpack:///multi_./src/js/index.ts_./src/scss/styles.scss?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.Test = void 0;\nvar Test = /** @class */ (function () {\n    function Test() {\n    }\n    Test.prototype.addType = function (hola) {\n        console.log('saludo', hola);\n    };\n    return Test;\n}());\nexports.Test = Test;\n\n\n//# sourceURL=webpack:///./src/js/test.ts?");
 
 /***/ })
 

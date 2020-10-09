@@ -1,8 +1,6 @@
 const path = require('path');
-const HtmlWebPackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const webpack = require('webpack');
 
+const webpack = require('webpack');
 
 const template = process.env.TEMPLATE;
 
@@ -11,32 +9,24 @@ if (!template) {
 }
 
 module.exports = {
-  entry: ['./src/js/index.js', './src/scss/styles.scss'],
+  entry: ['./src/js/index.ts', './src/scss/styles.scss'],
   output: {
     filename: 'js/js.bundle.js',
     path: path.join(__dirname, `/wp-content/themes/${template}/assets/`)
   },
+  resolve: {
+    extensions: [ '.tsx', '.ts'],
+  },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.ts$/,
+        use: 'ts-loader',
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env']
-          }
-        }
       },
       {
         test: /\.(png|jpg|svg)$/,
         loader: 'url-loader'
-      },
-      {
-        test: /\.css$/,
-        use: [
-          {loader: 'css-loader'}
-        ]
       },
       {
         test: /\.scss$/,
@@ -55,9 +45,12 @@ module.exports = {
           },
           {
             loader: 'sass-loader'
+          },
+          {
+            loader: 'postcss-loader'
           }
         ]
-      }
+      },
 
     ]
   },
